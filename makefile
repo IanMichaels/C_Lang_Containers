@@ -5,7 +5,7 @@ CXX=gcc
 
 .PHONY : clean
 
-proj.x : proj.o
+proj.x : proj.o c_list.o mem_tools.o
 	$(CXX) $(CXXFLAGS) -o $@ $<
 
 clean:
